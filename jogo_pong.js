@@ -6,7 +6,7 @@ let rBolinha = dBolinha / 2;
 
 // Velocidade da bolinha
 let velocidade_xBolinha = 6;
-let velocidade_yBolinha = 6;
+let velocidade_yBolinha = 2;
 
 //variáveis da raquete
 let xRaquete = 5
@@ -94,11 +94,17 @@ function movimentoRaqueteOponente(){
 }
 
 function incluiPlacar(){
+  stroke(255);
   textAlign(CENTER);
   textSize(16);
-  fill(255)
-  text(pontosMeus, 150, 25);
-  text(pontosOponente, 450, 25);
+  fill(color(255,140,0));
+  rect(150, 10, 40, 20);
+  fill(255);
+  text(pontosMeus, 170, 25);
+  fill(color(255,140,0));
+  rect(450, 10, 40, 20);
+  fill(255);
+  text(pontosOponente, 470, 25);
 }
 
 function marcaPonto(){
